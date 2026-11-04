@@ -1,0 +1,212 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sesión de Claridad — People Marketing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* ===== Tokens People Marketing ===== */
+:root{
+--orange-50:#FFF1EC;--orange-100:#FFDCD1;--orange-200:#FFB8A3;--orange-300:#FF8E6D;--orange-400:#FF6A42;--orange-500:#FF4419;--orange-600:#E0330A;--orange-700:#B32706;--orange-800:#7F1C05;
+--teal-50:#EEF7F5;--teal-100:#D3EBE6;--teal-200:#A8D6CD;--teal-300:#78BDB0;--teal-400:#56AB9C;--teal-500:#3F9C8C;--teal-600:#2F8072;--teal-700:#256459;--teal-800:#1A4740;
+--ink:#111111;--white:#FFFFFF;
+--gray-900:#111111;--gray-800:#2A2A2A;--gray-700:#444444;--gray-600:#636363;--gray-500:#8A8A8A;--gray-400:#B5B5B5;--gray-300:#D6D6D6;--gray-200:#E6E6E6;--gray-100:#F2F2F2;--gray-50:#F8F8F8;
+--red-500:#C8261B;--red-50:#FDEDEB;--amber-500:#E8A317;--amber-50:#FDF5E4;
+
+--bg:var(--white);--bg-inverse:var(--ink);
+--surface-card:var(--white);--surface-muted:var(--gray-50);--surface-sunken:var(--gray-100);--surface-accent:var(--orange-50);--surface-teal:var(--teal-50);
+--fg-1:var(--ink);--fg-2:var(--gray-700);--fg-3:var(--gray-600);--fg-disabled:var(--gray-400);--fg-inverse:var(--white);--fg-on-accent:var(--white);
+--accent:var(--orange-500);--accent-hover:var(--orange-600);--accent-press:var(--orange-700);--accent-soft:var(--orange-50);
+--secondary:var(--teal-500);--secondary-hover:var(--teal-600);--secondary-soft:var(--teal-50);--secondary-text:var(--teal-700);
+--border:var(--gray-200);--border-strong:var(--ink);--border-subtle:var(--gray-100);
+--focus-ring:var(--orange-200);
+--success:var(--teal-600);--success-soft:var(--teal-50);--error:var(--red-500);--error-soft:var(--red-50);--warning:var(--amber-500);--warning-soft:var(--amber-50);--info:var(--ink);--info-soft:var(--gray-100);
+--text-link:var(--ink);--text-link-hover:var(--accent);
+}
+
+:root{
+--font-sans:'Archivo','Helvetica Neue',Helvetica,Arial,sans-serif;
+--font-display:var(--font-sans);
+--font-mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+--fw-light:300;--fw-regular:400;--fw-medium:500;--fw-semibold:600;--fw-bold:700;--fw-black:800;
+--fs-display-xl:104px;--fs-display:80px;--fs-h1:56px;--fs-h2:40px;--fs-h3:28px;--fs-h4:22px;--fs-body-lg:20px;--fs-body:17px;--fs-small:15px;--fs-caption:13px;--fs-eyebrow:13px;
+--lh-tight:0.95;--lh-snug:1.1;--lh-heading:1.2;--lh-body:1.55;
+--ls-display:-0.04em;--ls-heading:-0.02em;--ls-body:0;--ls-eyebrow:0.32em;
+
+--text-display:var(--fw-black) var(--fs-display)/var(--lh-tight) var(--font-display);
+--text-h1:var(--fw-black) var(--fs-h1)/var(--lh-snug) var(--font-display);
+--text-h2:var(--fw-bold) var(--fs-h2)/var(--lh-snug) var(--font-display);
+--text-h3:var(--fw-bold) var(--fs-h3)/var(--lh-heading) var(--font-sans);
+--text-h4:var(--fw-semibold) var(--fs-h4)/var(--lh-heading) var(--font-sans);
+--text-body:var(--fw-regular) var(--fs-body)/var(--lh-body) var(--font-sans);
+--text-body-lg:var(--fw-regular) var(--fs-body-lg)/var(--lh-body) var(--font-sans);
+--text-small:var(--fw-regular) var(--fs-small)/var(--lh-body) var(--font-sans);
+--text-eyebrow:var(--fw-regular) var(--fs-eyebrow)/1 var(--font-sans);
+}
+
+:root{
+--space-0:0;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;--space-9:96px;--space-10:128px;
+--container:1200px;--container-wide:1360px;--gutter:24px;--section-y:var(--space-9);
+--radius-0:0;--radius-sm:4px;--radius-md:8px;--radius-lg:16px;--radius-xl:24px;--radius-pill:999px;
+--border-w:1px;--border-w-strong:2px;--bar-h:10px;
+}
+
+:root{
+--shadow-0:none;
+--shadow-1:0 1px 2px rgba(17,17,17,.06),0 1px 1px rgba(17,17,17,.04);
+--shadow-2:0 10px 28px -12px rgba(17,17,17,.22);
+--shadow-3:0 24px 60px -20px rgba(17,17,17,.32);
+--ring:0 0 0 3px var(--focus-ring);
+--ease-out:cubic-bezier(.2,.7,.2,1);--ease-in-out:cubic-bezier(.6,0,.3,1);
+--dur-fast:120ms;--dur:200ms;--dur-slow:360ms;
+--overlay:rgba(17,17,17,.56);
+}
+
+/* ===== Página ===== */
+
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg-1);font:var(--text-body)}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+.ico{display:inline-flex;flex:none;width:20px;height:20px;color:inherit}.ico svg{width:100%;height:100%;stroke:currentColor;fill:none}
+h1,h2{margin:0;font-family:var(--font-display);letter-spacing:var(--ls-display);text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+.dot{display:inline-block;width:.16em;height:.16em;border-radius:50%;background:var(--accent);margin-left:.05em}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font:700 12px/1 var(--font-sans);letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:440px;min-height:60px;padding:0 24px;border-radius:var(--radius-pill);border:2px solid var(--ink);background:var(--ink);color:#fff;font:800 17px/1.2 var(--font-sans);text-decoration:none;transition:background var(--dur) var(--ease-out),transform var(--dur-fast) var(--ease-out)}
+.btn:hover{background:var(--accent);border-color:var(--accent)}
+.btn:active{transform:scale(.97)}
+/* hero */
+.hero{background:var(--ink);color:#fff;padding:56px 0 48px;text-align:center}
+.logo{height:40px;margin:0 auto 28px;display:block;filter:brightness(0) invert(1)}
+.hero h1{font-weight:800;font-size:clamp(28px,5.6vw,46px);line-height:1.15;letter-spacing:-.02em;max-width:800px;margin:0 auto}
+.hero p{margin:20px auto 0;color:var(--gray-300);font-size:18px;line-height:1.55;max-width:600px}
+.hero .acts{margin-top:32px;display:flex;justify-content:center}
+.hero .btn{background:var(--accent);border-color:var(--accent)}
+.hero .btn:hover{background:var(--accent-hover);border-color:var(--accent-hover)}
+/* sec */
+.sec{padding:56px 0 8px}
+.sec .head{text-align:center;margin-bottom:28px}
+.sec h2{font-weight:800;font-size:clamp(26px,4.4vw,36px);letter-spacing:-.015em}
+.lead{color:var(--fg-2);font-size:17px;line-height:1.6;text-align:center;max-width:600px;margin:0 auto}
+/* suena esto */
+.rgrid{display:grid;grid-template-columns:1fr;gap:16px}
+.rcard{background:var(--surface-muted);border-left:3px solid var(--secondary);border-radius:var(--radius-lg);padding:22px 24px;font-size:16px;line-height:1.5;color:var(--fg-1)}
+.rclose{margin-top:28px;text-align:center;font:700 19px/1.5 var(--font-sans);letter-spacing:-.005em;max-width:600px;margin-inline:auto}
+/* ficha */
+.ficha{background:var(--ink);color:#fff;border-radius:var(--radius-xl);padding:32px 28px;display:flex;flex-direction:column;gap:20px}
+.ficha h3{font:800 20px/1.3 var(--font-sans);letter-spacing:-.01em}
+.ficha ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px}
+.ficha li{display:flex;gap:12px;align-items:flex-start;font-size:16px;line-height:1.45;color:var(--gray-300)}
+.ficha li .n{width:26px;height:26px;border-radius:50%;background:var(--secondary);color:#fff;font:800 12px/1 var(--font-mono);display:flex;align-items:center;justify-content:center;flex:none}
+.ficha .note{border-top:1px solid var(--gray-700);padding-top:18px;color:var(--gray-400);font-size:14px;line-height:1.5}
+/* como funciona */
+.steps{display:flex;flex-direction:column;gap:14px}
+.step{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px}
+.step .n{width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;font:800 15px/1 var(--font-mono);display:flex;align-items:center;justify-content:center;flex:none}
+.step b{display:block;font:700 17px/1.3 var(--font-sans);letter-spacing:-.005em}
+.step span{color:var(--fg-2);font-size:15px;line-height:1.5}
+/* quien */
+.who2{display:grid;grid-template-columns:1fr;gap:14px}
+.who2 .card{border-radius:var(--radius-lg);padding:24px}
+.who2 .yes{background:var(--ink);color:#fff}
+.who2 .no{background:var(--surface-muted);color:var(--fg-1)}
+.who2 h3{font:800 17px/1.3 var(--font-sans);margin-bottom:14px;letter-spacing:-.01em}
+.who2 ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:12px}
+.who2 li{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.4}
+.who2 .yes li .ico{color:var(--secondary)}
+.who2 .no li .ico{color:var(--accent)}
+.who2 li .ico{width:18px;height:18px;margin-top:1px}
+/* faq */
+.faq details{border:1px solid var(--border);border-radius:var(--radius-lg);padding:18px 20px;margin-bottom:12px}
+.faq summary{display:flex;justify-content:space-between;gap:12px;align-items:center;font:700 16px/1.35 var(--font-sans);cursor:pointer;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .p{width:26px;height:26px;border-radius:50%;border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;flex:none;position:relative}
+.faq summary .p::before,.faq summary .p::after{content:"";position:absolute;background:var(--ink)}
+.faq summary .p::before{width:10px;height:2px}.faq summary .p::after{width:2px;height:10px;transition:transform var(--dur) var(--ease-out)}
+.faq details[open] summary .p::after{transform:scaleY(0)}
+.faq p{margin-top:14px;color:var(--fg-2);font-size:15px;line-height:1.55}
+.faq .pend{color:var(--accent);font-weight:700}
+/* cierre */
+.cta{padding:64px 0 72px}
+.cta .band{background:#fff;border:1px solid var(--border);border-radius:var(--radius-xl);padding:48px 32px;display:flex;flex-direction:column;gap:20px;align-items:center;text-align:center;max-width:560px;margin:0 auto}
+.cta h2{color:var(--fg-1);font-weight:800;font-size:clamp(26px,4.4vw,36px);line-height:1.2;letter-spacing:-.015em}
+.cta .micro{color:var(--fg-3);font:500 13px/1 var(--font-mono)}
+@media (min-width:720px){
+.wrap{padding:0 40px}
+.hero{padding:76px 0 64px}
+.sec{padding-top:80px}
+.who2{grid-template-columns:1fr 1fr}
+.cta{padding:80px 0 88px}
+}
+</style></head>
+<body>
+<section class="hero"><div class="wrap">
+<img class="logo" src="logo-people-reversed.png" alt="People Marketing">
+<h1>Sesión de Claridad: sabe qué hacer, en qué orden y quién lo hace<span class="dot"></span></h1>
+<p>Una sesión de trabajo para ver cómo vende tu negocio hoy, encontrar lo que más lo frena y salir con un plan escrito. Sin promesas de milagros.</p>
+<div class="acts"><a class="btn" href="#form">Cuéntanos de tu negocio</a></div>
+</div></section>
+
+<section class="sec wrap"><div class="head"><span class="eyebrow">¿Te suena esto?</span></div>
+<div class="rgrid">
+<div class="rcard">Vendes, pero casi todo llega por recomendación y boca a boca, y ya sientes el techo.</div>
+<div class="rcard">Has probado cosas (anuncios, redes, alguien que "lo hiciera por ti") sin saber qué estaba fallando de verdad.</div>
+<div class="rcard">Sientes que lo digital y la IA te dejaron atrás.</div>
+<div class="rcard">Tienes diez ideas y ninguna prioridad clara.</div>
+</div>
+<p class="rclose">Si te pasa, probablemente no te falta más marketing. Te falta ver con claridad dónde se está frenando tu venta.</p>
+</section>
+
+<section class="sec wrap"><div class="head"><span class="eyebrow">Qué es</span><h2>Qué es la Sesión de Claridad</h2></div>
+<p class="lead">Es una sesión de trabajo contigo (y con quien decide en tu negocio) donde revisamos cómo vendes hoy: tu oferta, de dónde llegan tus clientes, cómo se atienden y se cierran, y tus números. Al final sabemos qué es lo que más te frena y qué conviene hacer primero.</p>
+</section>
+
+<section class="sec wrap"><div class="head"><span class="eyebrow">Qué te llevas</span><h2>Tu Ficha de claridad</h2></div>
+<p class="lead" style="margin-bottom:28px">Una página escrita, solo para tu negocio, con:</p>
+<div class="ficha"><ul>
+<li><span class="n">1</span>Dónde se frena tu venta y el dato que lo demuestra.</li>
+<li><span class="n">2</span>Una meta a 90 días con números.</li>
+<li><span class="n">3</span>Qué hacer, en qué orden (de 3 a 5 pasos).</li>
+<li><span class="n">4</span>Quién ejecuta cada paso: tú, tu equipo o un perfil que habría que contratar.</li>
+<li><span class="n">5</span>Qué no hacer por ahora.</li>
+<li><span class="n">6</span>Un plan para tus primeras 4 semanas.</li>
+</ul>
+<div class="note">La sesión es estrategia y claridad, no ejecución. Con tu ficha en mano puedes ejecutar tú, con tu equipo o con nosotros si hay encaje.</div>
+</div>
+</section>
+
+<section class="sec wrap"><div class="head"><span class="eyebrow">Cómo funciona</span></div>
+<div class="steps">
+<div class="step"><span class="n">01</span><div><b>Cuéntanos de tu negocio.</b><span>Un formulario corto, de unos 3 minutos.</span></div></div>
+<div class="step"><span class="n">02</span><div><b>Agenda una conversación de 30 a 45 minutos.</b><span>Vemos si hay encaje. Si no lo hay, te lo decimos con honestidad y qué haría falta primero.</span></div></div>
+<div class="step"><span class="n">03</span><div><b>Sesión de Claridad.</b><span>De 60 a 90 minutos de trabajo, y sales con tu ficha y tu plan.</span></div></div>
+</div>
+</section>
+
+<section class="sec wrap"><div class="head"><span class="eyebrow">Para quién es</span></div>
+<div class="who2">
+<div class="card yes"><h3>Es para ti si...</h3><ul>
+<li><span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>Ya vendes y tu oferta funciona, aunque sea poco.</li>
+<li><span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>Quieres crecer más allá de las recomendaciones.</li>
+<li><span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>Quien decide está en la sesión.</li>
+<li><span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>Puedes compartir tus números reales.</li>
+<li><span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></span>Puedes ejecutar el plan, tú o contratando a alguien.</li>
+</ul></div>
+<div class="card no"><h3>No es para ti si...</h3><ul>
+<li><span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Aún no has vendido.</li>
+<li><span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Buscas que alguien te haga los anuncios sin entender tu negocio.</li>
+<li><span class="ico"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Esperas resultados garantizados.</li>
+</ul></div>
+</div>
+</section>
+
+<section class="sec faq wrap"><div class="head"><span class="eyebrow">Preguntas frecuentes</span></div>
+<details><summary>¿Cuánto cuesta?<span class="p"></span></summary><p class="pend">[PENDIENTE: definir precio]</p></details>
+<details><summary>¿Me garantizan ventas?<span class="p"></span></summary><p>No. Lo que te damos es claridad, criterio y un plan. Las ventas dependen de ejecutarlo.</p></details>
+<details><summary>¿Y si no hay encaje?<span class="p"></span></summary><p>Te lo decimos en la conversación y no pagas nada.</p></details>
+<details><summary>¿Cómo es?<span class="p"></span></summary><p>Por videollamada, en el horario que elijas.</p></details>
+</section>
+
+<section class="cta wrap" id="form"><div class="band">
+<h2>Tu negocio ya demostró que funciona. Veamos si podemos llevarlo más lejos.</h2>
+<a class="btn" style="background:var(--accent);border-color:var(--accent)" href="#">Cuéntanos de tu negocio</a>
+<span class="micro">Toma unos 3 minutos. Después eliges horario.</span>
+</div></section>
+</body></html>
